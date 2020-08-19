@@ -133,3 +133,15 @@ Langkah-langkah:
   ```sh
   git merge master
   ```
+
+## Melihat hasil perubahan
+```sh
+git show
+```
+atau
+```
+git show <nama_file>
+```
+
+Contoh:
+`git show README.md`

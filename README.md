@@ -145,3 +145,18 @@ git show <nama_file>
 
 Contoh:
 `git show README.md`
+
+## Flow standar bekerja dalam tim
+
+Untuk bekerja di dalam tim flow bisa mengikuti flow kerja berikut ini:
+1. Clone repo ke lokal (`git clone`)
+2. Setiap perubahan dibuat pada branch baru (`git checkout -b nama-branch`)
+3. Setelah selesai perubahan jangan lupa di add dan di commit (`git add . && git commit -m "pesan"`)
+4. Sync perubahan master ke branch perubahan kita:
+   * `git checkout master`
+   * `git pull`
+   * `git checkout branch-lokal`
+   * `git merge master` atau `git rebase master`
+5. Push perubahan ke repository origin (`git push -u origin HEAD`)
+6. Bikin Pull Request minta request ke tim
+7. Tim silahkan review, kalau sudah oke di-approve kalau belum kasi komentar dan diperbaiki lagi.

@@ -23,6 +23,10 @@ set alamat email yang akan digunakan sebagai informasi identitas user saat anda 
 
 `git config --global user.email "your_valid_email_address"`
 
+melihat list config yang ada
+
+`git config --list`
+
 ## Meng-_clone_ repository ke lokal
 
 Meng-_clone_ repository dari github/gitlab ke komputer lokal.

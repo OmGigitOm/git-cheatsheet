@@ -2,6 +2,31 @@
 
 Workflow sederhana penggunaan `git`.
 
+## install git
+
+### github untuk windows
+https://windows.github.com
+
+### github untuk mac
+https://mac.github.com
+
+### untuk semua platform
+https://git-scm.com
+
+## konfigurasi informasi user untuk semua repository lokal
+
+set nama user yang akan digunakan sebagai informasi identitas user saat anda melakukan transaksi commit
+
+`git config --global user.name "your_user_name"`
+
+set alamat email yang akan digunakan sebagai informasi identitas user saat anda melakukan transaksi commit
+
+`git config --global user.email "your_valid_email_address"`
+
+melihat list config yang ada
+
+`git config --list`
+
 ## Meng-_clone_ repository ke lokal
 
 Meng-_clone_ repository dari github/gitlab ke komputer lokal.
@@ -18,6 +43,10 @@ git clone https://github.com/OmGigitOm/git-cheatsheet.git
 
 _Repository_ `git` terdiri dari _branch_. Masing-masing _branch_ berisikan versi perubahan. _Branch_ utama biasanya diberi nama _branch_ `master`. Satu _repository_ bisa memiliki banyak _branch_.
 
+## untuk melihat list branch yang ada
+
+`git branch`
+
 Untuk melakukan perubahan _checkout_ dari branch `master` dan kemudian lakukan perubahan di-repository yang baru di _checkout_.
 
 `git checkout -b <nama-branch>`
@@ -28,6 +57,14 @@ buat _branch_ `versi-1` dan pindah ke _branch_ tersebut.
 ```sh
 git checkout -b versi-1
 ```
+
+atau
+
+`git branch <new_branch_name>`
+
+kemudian pindah ke branch tersebut
+
+`git checkout <new_branch_name>`
 
 ## Berpindah antar _branch_
 
